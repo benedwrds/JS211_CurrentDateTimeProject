@@ -16,35 +16,101 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+const num = 100;
+console.log(num, typeof num);
+
+const grade = String(num);
+console.log(grade, typeof grade)
+
 
 
 // Write a JavaScript program to convert a string to the number.
+const amount = "10.25"
+console.log(amount, typeof amount);
 
+const a = parseFloat(amount);
+console.log(a, typeof a);
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
+// * Boolean
+let a = false;
+console.log(a, typeof a)
+
+// * Null
+let b = null;
+console.log(b, typeof b)
+
+// * Undefined
+let c;
+console.log(c, typeof c)
+
+// * Number
+const number = 5;
+console.log(number, typeof number)
+ 
+// * NaN
+const NotANum = NaN;
+console.log(NotANum, typeof NotANum)
+
+// * String
+const greeting = "Hello there";
+console.log(greeting, typeof greeting)
   
 
   
 // Write a JavaScript program that adds 2 numbers together.
+const num1 = 5;
+const num2 = 11;
+const total = num1 + num2;
+console.log(total)
 
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+const value1 = 10;
+const value2 = 20;
+
+const truth = (arg1, arg2) => {
+  if (arg1 && arg2){
+    return true
+  } else {
+    return false
+  }
+} 
+
+console.log(truth(value1, value2))
 
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+const numeroUno = 13;
+const numeroDos = 0;
 
+const oneIsTrue = (argue1, argue2) => {
+  if (argue1 || argue2){
+    return true
+  } else {
+    return false
+  }
+}
 
-// Write a JavaScript program that runs when both things are not true.  
+console.log(oneIsTrue(numeroUno, numeroDos))
+// Write a JavaScript program that runs when both things are not true.
+
+const empty = " ";
+const zero = 0;
+
+const oneIsFalse = (argument1, argument2) => {
+  if (argument1 && argument2){
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(oneIsFalse(empty, zero))
 
 // ***************************
 //         PART TWO
